@@ -21,7 +21,21 @@
         "height": 768
       },
       "resizable": true
-    }
+    },
+    "about": "Multi-User Dungeon text adventure game.",
+    "help": [
+      "Type commands to interact",
+      "Use look to see surroundings",
+      "Type help for commands"
+    ],
+    "docs": "https://zos-apps.github.io/mud",
+    "site": "https://github.com/zos-apps/mud",
+    "features": [
+      "Text-based exploration",
+      "Commands",
+      "Inventory",
+      "Combat"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -54,5 +68,13 @@
     "mud",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
