@@ -1,59 +1,55 @@
 # 🏰 MUD
 
-Multiplayer text adventure with AI dungeon master.
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/zos-apps/mud/releases)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs](https://img.shields.io/badge/docs-online-purple.svg)](https://zos-apps.github.io/mud)
 
-## Features
+> Multiplayer text adventure with AI dungeon master
 
-- **Multiplayer** - Play with others in the same browser via BroadcastChannel
-- **LLM-Powered Narration** - Dynamic, atmospheric descriptions
-- **Pixel Art** - ASCII art scene visualization
-- **Character Creation** - Choose avatar, class, and color
-- **Exploration** - 9 interconnected rooms to explore
-- **Commands** - Full MUD command set (look, move, take, say, emote, etc.)
-
-## Commands
-
-```
-Movement: north/n, south/s, east/e, west/w, up/u, down/d
-look/l - Look around the room
-say/'message - Say something
-emote/:action - Perform an action
-take/get item - Pick up an item
-inventory/i - Check your pack
-who - See online players
-stats - View your character
-help/? - Show commands
-```
+**[Documentation](https://zos-apps.github.io/mud)** • **[App Store](https://zos-apps.github.io/app-store)** • **[All Apps](https://github.com/zos-apps)**
 
 ## Installation
 
-\`\`\`bash
-npm install @anthropic/mud
-# or
-pnpm add @anthropic/mud
-\`\`\`
+```bash
+npm install github:zos-apps/mud
+```
+
+Or install via the [zOS App Store](https://zos-apps.github.io/app-store).
 
 ## Usage
 
-\`\`\`tsx
-import MUD from '@anthropic/mud';
+```tsx
+import MUD from '@zos-apps/mud';
 
 function App() {
-  return <MUD onClose={() => {}} />;
+  return <MUD />;
 }
-\`\`\`
+```
 
-## World
+## Features
 
-- Town Square - Starting area
-- The Rusty Dragon Tavern - Rest and gossip
-- Eastern Market - Buy potions and gear
-- Temple of the Light - Healing and blessings
-- Southern Gate - Exit to the wilderness
-- The Darkwood - Dangerous forest
-- Dragon's Lair - Treasure and danger
-- Alchemist's Workshop - Magical items
+- Native zOS window integration
+- Dark mode support
+
+- Context menu actions
+- Menu bar integration
+
+## Category
+
+**Games**
+
+## Permissions
+
+- `storage.local`
+- `network`
+
+## Links
+
+- [Documentation](https://zos-apps.github.io/mud)
+- [GitHub Repository](https://github.com/zos-apps/mud)
+- [Report Issues](https://github.com/zos-apps/mud/issues)
+- [All zOS Apps](https://github.com/zos-apps)
 
 ## License
 
-MIT
+MIT © [Hanzo AI](https://hanzo.ai)

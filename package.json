@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/mud",
+  "name": "@zos-apps/mud",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,9 +11,15 @@
     "icon": "🏰",
     "category": "games",
     "description": "Multiplayer text adventure with AI dungeon master",
-    "permissions": ["storage.local", "network"],
+    "permissions": [
+      "storage.local",
+      "network"
+    ],
     "window": {
-      "defaultSize": { "width": 1024, "height": 768 },
+      "defaultSize": {
+        "width": 1024,
+        "height": 768
+      },
       "resizable": true
     }
   },
@@ -30,5 +36,23 @@
     "@types/react-dom": "^18.3.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
-  }
+  },
+  "description": "Multiplayer text adventure with AI dungeon master",
+  "homepage": "https://zos-apps.github.io/mud",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/mud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/mud/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "mud",
+    "macos",
+    "desktop"
+  ]
 }
