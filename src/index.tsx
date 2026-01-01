@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 interface MUDProps {
   onClose: () => void;
@@ -200,7 +200,7 @@ const ROOMS: Record<string, Room> = {
 };
 
 // LLM-style narrative generator
-const generateNarration = (action: string, player: Player, room: Room, players: Player[]): string => {
+const generateNarration = (action: string, player: Player, room: Room, _players: Player[]): string => {
   const templates: Record<string, string[]> = {
     look: [
       `${player.name} surveys their surroundings. ${room.description}`,
@@ -236,10 +236,10 @@ const generateNarration = (action: string, player: Player, room: Room, players: 
   return options[Math.floor(Math.random() * options.length)];
 };
 
-const STORAGE_KEY = 'zos-mud-state';
+// const _STORAGE_KEY = 'zos-mud-state';
 const CHANNEL_NAME = 'zos-mud-channel';
 
-const MUD: React.FC<MUDProps> = ({ onClose }) => {
+const MUD: React.FC<MUDProps> = ({ onClose: _onClose }) => {
   const [player, setPlayer] = useState<Player | null>(null);
   const [players, setPlayers] = useState<Player[]>([]);
   const [messages, setMessages] = useState<Message[]>([]);
